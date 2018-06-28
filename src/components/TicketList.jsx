@@ -9,19 +9,21 @@ function TicketList(props){
   var myStyledComponentStyles = {
     backgroundColor: '#ecf0f1',
     fontFamily: 'sans-serif',
-    paddingTop: '50px'
+    paddingTop: '50px',
+    textAlign: 'center'
   };
+
   return (
     <div style={myStyledComponentStyles}>
       <hr/>
-      {props.ticketList.map((ticket, index) =>
+      {props.ticketList.map((ticket) =>
         <Ticket names={ticket.names}
           location={ticket.location}
           issue={ticket.issue}
-          key={index}/>
+          formattedWaitTime={ticket.formattedWaitTime}
+          key={ticket.id}/>
       )}
     </div>
-
   );
 }
 
