@@ -31,16 +31,6 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(png|gif|jp(e*)g|svg)$/,
-        use: {
-          loader: 'url-loader',
-          options: {
-            limit: 8000,
-            name: 'images/[hash]-[name].[ext]'
-          }
-        }
-      },
-      {
         test: /\.jsx?$/,
         enforce: "pre",
         loader: "eslint-loader",
@@ -50,7 +40,17 @@ module.exports = {
           configFile: "./.eslintrc.json"
           }
         },
-      {
+        {
+      test: /\.(png|gif|jp(e*)g|svg)$/,
+      use: {
+        loader: 'url-loader',
+        options: {
+          limit: 8000,
+          name: 'images/[hash]-[name].[ext]'
+        }
+      }
+    },
+        {
         test: /\.jsx?$/,
         loader: "babel-loader",
         exclude: /node_modules/,
@@ -62,10 +62,10 @@ module.exports = {
           plugins: [
             "react-hot-loader/babel",
             "styled-jsx/babel"
-          ]
+          ],
         }
       }
-    ]
+    ],
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
@@ -73,7 +73,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template:'template.ejs',
       appMountId: 'react-app-root',
-      title: 'React Help Queue',
+      title: 'Tap Room React',
       filename: resolve(__dirname, "build", "index.html"),
     }),
   ]

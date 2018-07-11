@@ -46,7 +46,7 @@ This is React app for a bar  to track their kegs.
 * React
 * Javascript
 * JSX
-* REACT
+
 
 ## Support and contact details
 

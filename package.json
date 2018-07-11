@@ -1,5 +1,5 @@
 {
-  "name": "react-help-queue",
+  "name": "tap-room-react",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -13,14 +13,15 @@
   "license": "ISC",
   "dependencies": {
     "file-loader": "^1.1.6",
-    "moment": "^2.22.2",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.3",
     "prop-types": "^15.5.10",
     "react": "^15.5.4",
+    "react-bootstrap": "^0.32.1",
     "react-dom": "^15.5.4",
     "react-router-dom": "^4.0.0",
-    "styled-jsx": "^2.2.7",
-    "url-loader": "^0.6.2",
-    "uuid": "^3.2.1"
+    "styled-jsx": "^2.2.6",
+    "url-loader": "^0.6.2"
   },
   "devDependencies": {
     "babel-core": "^6.24.1",

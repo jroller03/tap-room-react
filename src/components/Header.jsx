@@ -6,7 +6,7 @@ function Header(){
     <div>
       <div className='container'>
         <div className='jumbotron' style={HeaderStyles}>
-          <h1>Justins Tap Roo,</h1>
+          <h1>Justins Tap Room!</h1>
           <Link to="/">Home</Link> | <Link to="/Admin">Admin</Link>
         </div>
       </div>
@@ -14,7 +14,7 @@ function Header(){
   );
 }
 var HeaderStyles = {
-  fontFamily: "Pacifico",
+  fontFamily: "Fantasy",
   textAlign: "center",
   padding: "20px",
   margin: "20px",
