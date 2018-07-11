@@ -8,12 +8,9 @@
 
 This is React app for a bar  to track their kegs.
 
-<h3> The Layout of the Project </h3>
-<p align="center">
-  <strong>Component structure of Tap Room project </strong>
-  <img src = https://github.com/azamatbekmurat/tap-room-react/blob/master/src/assets/images/tap-room-layout.jpg?raw=true" width=700>
-  <br>
-</p>
+## Component-Structure
+
+![alt text](./src/assets/images/Component-Structure.png "Component Structure Diagram")
 
 ## Current features:
 
@@ -47,7 +44,9 @@ This is React app for a bar  to track their kegs.
 * HTML
 * CSS
 * React
-* Node Package Manager
+* Javascript
+* JSX
+* REACT
 
 ## Support and contact details
 
